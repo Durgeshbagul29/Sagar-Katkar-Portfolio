@@ -1,4 +1,5 @@
 import React from 'react'
+import images from '../assets/images'
 
 export default function Certificates(){
   const certificates = [
@@ -65,7 +66,7 @@ export default function Certificates(){
   ]
 
   return (
-    <section className="space-y-12">
+    <section className="space-y-12 mx-w-[1200px] mx-auto">
       <div className="text-center">
         <h1 className="section-title">Certificates</h1>
         <p className="section-subtitle mx-auto">

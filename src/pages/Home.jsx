@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import images from '../assets/images'
 
 export default function Home(){
   const [counts, setCounts] = useState({
@@ -124,7 +125,7 @@ export default function Home(){
   return (
     <section className="space-y-16">
       {/* Hero Section */}
-      <div className="grid lg:grid-cols-2 gap-12 items-center my-10 md:mt-20">
+      <div className="grid lg:grid-cols-2 gap-12 items-center my-10 md:mt-20 mx-w-[1200px] mx-auto">
         {/* Left Side - Text Content */}
         <div className="space-y-6 fade-in-up">
           <div className="inline-block px-4 py-1 bg-slate-800 rounded-full text-cyan-400 text-sm font-semibold mb-4">
@@ -162,7 +163,7 @@ export default function Home(){
           <div className="relative">
             <div className="w-full aspect-square max-w-md mx-auto rounded-2xl bg-gradient-to-br from-cyan-400/10 to-emerald-500/20 backdrop-blur-sm border border-cyan-400/30 flex items-center justify-center overflow-hidden">
               <img 
-                src="/assets/sagar.png" 
+                src={images.profile} 
                 alt="Sagar Katkar" 
                 className="w-full h-full object-cover"
                 style={{

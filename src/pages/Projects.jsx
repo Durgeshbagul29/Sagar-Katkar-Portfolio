@@ -187,7 +187,7 @@ export default function Projects(){
   ]
 
   return (
-    <section className="space-y-12">
+    <section className="space-y-12 mx-w-[1200px] mx-auto">
       <div className="text-center">
         <h1 className="section-title">My Projects</h1>
         <p className="section-subtitle mx-auto">

@@ -43,7 +43,7 @@ export default function About() {
   const skills = [{ category: "Game Development", items: ["Unreal Engine 4/5", "Blueprints", "C++", "Niagara VFX", "Gameplay Systems"] }, { category: "Programming", items: ["C++", "Python", "JavaScript", "Blueprints", "Shader Programming"] }, { category: "Tools & Platforms", items: ["Visual Studio", "Git", "Perforce", "Steam", "Google Play", "Oculus SDK"] }, { category: "Specializations", items: ["Multiplayer Systems", "Game Optimization", "UI/UX Design", "Physics Simulation"] }]
 
   return (
-    <section className="space-y-16">
+    <section className="space-y-16 mx-w-[1200px] mx-auto">
       <div className="text-center">
         <h1 className="section-title">About Me</h1>
         <p className="section-subtitle mx-auto">
