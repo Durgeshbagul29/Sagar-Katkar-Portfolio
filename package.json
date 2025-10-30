@@ -15,6 +15,7 @@
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
+    "rollup": "^3.29.5",
     "vite": "^5.1.0"
   }
 }
