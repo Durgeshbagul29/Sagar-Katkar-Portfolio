@@ -162,7 +162,7 @@ export default function Home(){
           <div className="relative">
             <div className="w-full aspect-square max-w-md mx-auto rounded-2xl bg-gradient-to-br from-cyan-400/10 to-emerald-500/20 backdrop-blur-sm border border-cyan-400/30 flex items-center justify-center overflow-hidden">
               <img 
-                src="assets\sagar.png" 
+                src="/assets/sagar.png" 
                 alt="Sagar Katkar" 
                 className="w-full h-full object-cover"
                 style={{
