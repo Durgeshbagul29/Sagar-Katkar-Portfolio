@@ -1,0 +1,77 @@
+EmailJS Setup Instructions for Contact Form
+============================================
+
+Follow these steps to enable email functionality in your portfolio contact form:
+
+1. CREATE EMAILJS ACCOUNT
+   - Go to https://www.emailjs.com/
+   - Click "Sign Up" and create a free account
+   - Verify your email address
+
+2. ADD EMAIL SERVICE
+   - In EmailJS dashboard, go to "Email Services"
+   - Click "Add New Service"
+   - Choose your email provider (Gmail recommended)
+   - Follow the connection steps for your email provider
+   - Note down your SERVICE ID (e.g., service_abc123)
+
+3. CREATE EMAIL TEMPLATE
+   - Go to "Email Templates" in the dashboard
+   - Click "Create New Template"
+   - Set up your template with these variables:
+     
+     Subject: New Contact from {{from_name}} - {{subject}}
+     
+     Body:
+     You have received a new message from your portfolio contact form.
+     
+     Name: {{from_name}}
+     Email: {{from_email}}
+     Subject: {{subject}}
+     
+     Message:
+     {{message}}
+     
+     ---
+     This email was sent from your portfolio contact form.
+   
+   - Save the template
+   - Note down your TEMPLATE ID (e.g., template_xyz789)
+
+4. GET YOUR PUBLIC KEY
+   - Go to "Account" in the dashboard
+   - Find your "Public Key" (also called API Key)
+   - Copy this key (e.g., your_public_key_here)
+
+5. UPDATE YOUR CODE
+   - Open: src/pages/Contact.jsx
+   - Find these lines near the top:
+     
+     const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID'
+     const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
+     const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
+   
+   - Replace with your actual values:
+     
+     const EMAILJS_SERVICE_ID = 'service_abc123'  // Your service ID
+     const EMAILJS_TEMPLATE_ID = 'template_xyz789'  // Your template ID
+     const EMAILJS_PUBLIC_KEY = 'your_public_key_here'  // Your public key
+
+6. TEST THE FORM
+   - Save the file
+   - Run your development server: npm run dev
+   - Go to the Contact page
+   - Fill out the form and submit
+   - Check your email (baguldurgesh05@gmail.com) for the message
+
+IMPORTANT NOTES:
+- EmailJS free tier allows 200 emails per month
+- Emails will be sent to: baguldurgesh05@gmail.com
+- Make sure to verify your EmailJS email service
+- Check spam folder if you don't see test emails
+
+TROUBLESHOOTING:
+- If emails aren't sending, check browser console for errors
+- Verify all IDs are correct in Contact.jsx
+- Make sure your EmailJS service is verified and active
+- Check EmailJS dashboard for any error logs

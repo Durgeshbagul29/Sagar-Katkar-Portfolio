@@ -1,0 +1,6 @@
+Convert this project to production:
+- Replace Tailwind CDN with proper Tailwind + PostCSS setup and tailwind.config.js
+- Add TypeScript support
+- Add Netlify / Vercel deploy settings
+- Replace demo alerts with hosted WebGL builds
+- Add automated tests and CI workflow
